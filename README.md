@@ -32,6 +32,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Need to see if I can get the built-in radio doing something useful.
 * Figure out all the GPIO I can access and wire them to a port. It would be neat to be abel to do i2c, etc
 * I think auto-reset doesn't work right, on program
+* Look at JTAG port, might be able to reuse stuff from that more easily
 
 ## Thanks
 
