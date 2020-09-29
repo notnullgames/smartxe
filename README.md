@@ -23,6 +23,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * A small plug like [this](https://www.sparkfun.com/products/14050) built-in to case might make it more arduino-like, and easier for non-tech (and tech) people to use
 * Need to work out how to use the SPI flash & CC1101 at same time (I think it's either/or right now)
 * Need to see if I can get the built-in radio doing something useful.
+* Figure out all the GPIO I can access and wire them to a port. It would be neat to be abel to do i2c, etc
 
 ## Thanks
 
