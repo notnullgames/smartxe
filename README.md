@@ -7,7 +7,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * use ICSP on [pogo-pins](https://github.com/securelyfitz/smartresponse) through (existing) holes in battery compartment to to do initial arduino bootloader programming (so you can use serial instead of ICSP)
 * The arduino hardware-definition matches [this](https://learn.sparkfun.com/tutorials/atmega128rfa1-dev-board-hookup-guide/overview)
 * Program the arduino bootloader with ICSP, then use serial to make it work more like regular arduino
-* Connect a CC1101 board (with little antenna) to SPI (`MISO`, `MOSI`, `SCK`, `VCC`, `GND` on ICSP pogo) and GD0 (labeled `CS_flash`) & CSN pins (left pin of `R34`)
+* Connect a CC1101 board (with little antenna) to SPI (`MISO`, `MOSI`, `SCK`, `VCC`, `GND` on ICSP pogo or test-pads (so it doesn't mess with pogo) and GD0 (labeled `CS_flash`) & CSN pins (left pin of `R34`)
 * Connect serial TX/RX of `RS232` to connector for serial adapter and solder-bridge pins 3,4,5 on `U6` trace.
 * Drill hole in case to fit antanna, cut little bit out of fin inside to fit the board
 * use [arduino lib](https://github.com/bitbank2/SmartResponseXE)
