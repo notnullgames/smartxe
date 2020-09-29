@@ -36,6 +36,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 
 ## Thanks
 
+* [useful pinout docs](https://pastebin.com/uFfBCQDG)
 * Image-credit: [@ce](https://github.com/ea/srxe_cc1101). Lots of great notes on putting it together, too.
 * [arduino lib](https://github.com/bitbank2/SmartResponseXE) is very useful.
 * [This](https://github.com/fdufnews/SMART-Response-XE-Low_level) has some good notes & setup for easier arduino
