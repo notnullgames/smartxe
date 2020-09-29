@@ -11,6 +11,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Connect serial TX/RX of `RS232` to connector for serial adapter and solder-bridge pins 3,4,5 on `U6` trace.
 * Drill hole in case to fit antanna, cut little bit out of fin inside to fit the board
 * use [arduino lib](https://github.com/bitbank2/SmartResponseXE)
+* use [CC1101 lib](https://github.com/ea/CC1101)
 
 ![cc1101 hookup](https://github.com/ea/srxe_cc1101/raw/master/photos/board_annot.png)
 
@@ -18,12 +19,19 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 
 ![case mod](https://github.com/ea/srxe_cc1101/raw/master/photos/cc1101_fits.png)
 
+## arduino patches
+
+* [pager](https://github.com/ea/srxe_cc1101/tree/master/srxe_cc1101_pager)
+* [spectrum analyzer](https://github.com/ea/srxe_cc1101/tree/master/srxe_specan)
+* 
+
 ## needs investigation
 
 * A small plug like [this](https://www.sparkfun.com/products/14050) built-in to case might make it more arduino-like, and easier for non-tech (and tech) people to use
 * Need to work out how to use the SPI flash & CC1101 at same time (I think it's either/or right now)
 * Need to see if I can get the built-in radio doing something useful.
 * Figure out all the GPIO I can access and wire them to a port. It would be neat to be abel to do i2c, etc
+* I think auto-reset doesn't work right, on program
 
 ## Thanks
 
