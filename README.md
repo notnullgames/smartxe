@@ -23,7 +23,9 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 
 * [pager](https://github.com/ea/srxe_cc1101/tree/master/srxe_cc1101_pager)
 * [spectrum analyzer](https://github.com/ea/srxe_cc1101/tree/master/srxe_specan)
-* 
+* [BASIC Interpretor](https://github.com/akkera102/07_tiny_basic)
+* [arduboy core](https://pastebin.com/1uWmkqGT)
+
 
 ## needs investigation
 
@@ -32,13 +34,15 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Need to see if I can get the built-in radio doing something useful.
 * Figure out all the GPIO I can access and wire them to a port. It would be neat to be able to do i2c, etc. Some are easier to get at (like JTAG, speaker pins, and top-4 pogo pins)
 * I think auto-reset doesn't work right, on program
-* Add (real) power switch
+* Add (real) power switch?
 * Try to wire CC1101 into pogo board for 0-soldering?
+* keep multiple "roms" on flash and swap them out with menu bootloader
 
 
 ## Thanks
 
 * [useful pinout docs](https://pastebin.com/uFfBCQDG)
+* [useful forum thread](https://community.arduboy.com/t/smart-response-xe-re-purposed-into-arduboy/6094)
 * Image-credit: [@ce](https://github.com/ea/srxe_cc1101). Lots of great notes on putting it together, too.
 * [arduino lib](https://github.com/bitbank2/SmartResponseXE) is very useful.
 * [This](https://github.com/fdufnews/SMART-Response-XE-Low_level) has some good notes & setup for easier arduino
