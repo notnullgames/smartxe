@@ -9,7 +9,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Program the arduino bootloader with ICSP, then use serial to make it work more like regular arduino, set the programming port to serial 1
 * Connect a CC1101 board (with little antenna) to SPI (`MISO`, `MOSI`, `SCK`, `VCC`, `GND` on ICSP test-pads) and GD0 (labeled `CS_flash`) & CSN pins (left pin of `R34`)
 * Connect serial TX/RX of `RS232` to connector for serial adapter and solder-bridge pins 3,4,5 on `U6` trace.
-* Drill hole in case to fit antanna, cut little bit out of fin inside to fit the board
+* Drill hole in case to fit antanna, cut little bit out of fin inside to fit the CC1101 board
 * use [arduino lib](https://github.com/bitbank2/SmartResponseXE). It has LCD, keyboard functions, and `SRXESleep` which can use power button + interrupts to make device power off work right
 * use [CC1101 lib](https://github.com/ea/CC1101)
 
@@ -36,7 +36,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Need to work out how to use the SPI flash & CC1101 at same time (I think it's either/or right now)
 * Need to see if I can get the built-in radio doing something useful.
 * Figure out all the GPIO I can access and wire them to a port. It would be neat to be able to do i2c, etc. Some are easier to get at (like JTAG, speaker pins, and top-4 pogo pins)
-* I think auto-reset doesn't work right, on program
+* Work out programmer RESET. I needs a 0.1uF capacitor, an d a little soldering
 * Try to wire CC1101 into pogo board for 0-soldering?
 * keep multiple "roms" on flash and swap them out with menu bootloader
 
