@@ -19,9 +19,11 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 
 ![case mod](https://github.com/ea/srxe_cc1101/raw/master/photos/cc1101_fits.png)
 
-## arduino patches
+## arduino
 
+* [wireless bootloader](https://github.com/bitbank2/SMART_bootloader) it's kinda big & requires sacraficial XE, but might be good for some situations, and maybe I could do something with RTL-SDR, with a little work
 * [pager](https://github.com/ea/srxe_cc1101/tree/master/srxe_cc1101_pager)
+* [another pager](https://github.com/pdxbadgers/5ohBEE-2019)
 * [spectrum analyzer](https://github.com/ea/srxe_cc1101/tree/master/srxe_specan)
 * [BASIC Interpretor](https://github.com/akkera102/07_tiny_basic)
 * [arduboy2 core](https://pastebin.com/1uWmkqGT)
@@ -30,7 +32,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 
 ## needs investigation
 
-* A small plug like [this](https://www.sparkfun.com/products/14050) built-in to case might make it more arduino-like, and easier for non-tech (and tech) people to use
+* A small plug like [this](https://www.sparkfun.com/products/14050) built-in to case might make it more arduino-like, and easier for non-tech (and tech) people to use. Another option would be to solder  MAX3221 and 0.1uF to board (using existing RS232 traces)
 * Need to work out how to use the SPI flash & CC1101 at same time (I think it's either/or right now)
 * Need to see if I can get the built-in radio doing something useful.
 * Figure out all the GPIO I can access and wire them to a port. It would be neat to be able to do i2c, etc. Some are easier to get at (like JTAG, speaker pins, and top-4 pogo pins)
@@ -45,5 +47,6 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * [useful forum thread](https://community.arduboy.com/t/smart-response-xe-re-purposed-into-arduboy/6094)
 * Image-credit: [@ce](https://github.com/ea/srxe_cc1101). Lots of great notes on putting it together, too.
 * [arduino lib](https://github.com/bitbank2/SmartResponseXE) is very useful.
+* [Detailed setup](https://docs.google.com/document/d/1TT3Tmx0-dsvzmA0lSYiwq4LR293aMV1dJWhriqxD-Po/edit)
 * [This](https://github.com/fdufnews/SMART-Response-XE-Low_level) has some good notes & setup for easier arduino
 * [this](https://community.arduboy.com/t/smart-response-xe-re-purposed-into-arduboy/6094) has notes about running arduboy on the XE
