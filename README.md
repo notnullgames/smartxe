@@ -31,19 +31,19 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 
 ## needs investigation
 
-* A small plug like [this](https://www.sparkfun.com/products/14050) built-in to case might make it more arduino-like, and easier for non-tech (and tech) people to use. Another option would be to solder  MAX3221 and 0.1uF to board (using existing RS232 traces)
+* A small board like [this](https://www.sparkfun.com/products/14050) built-in might make it more arduino-like, and easier for non-tech (and tech) people to use.
 * Need to work out how to use the SPI flash & CC1101 at same time (I think it's either/or right now)
 * Need to see if I can get the built-in radio doing something useful.
-* Figure out all the GPIO I can access and wire them to a port. It would be neat to be able to do i2c, etc. Some are easier to get at (like JTAG, speaker pins, and top-4 pogo pins)
-* Work out programmer RESET. I needs a 0.1uF capacitor, an d a little soldering
-* Try to wire CC1101 into pogo board for 0-soldering?
-* keep multiple "roms" on flash and swap them out with menu bootloader
+* Figure out all the GPIO I can access and wire them to a port. It would be neat to be able to do i2c, etc. Some are easier to get at (like JTAG, speaker, and top-4 pogo pins)
+* Work out programmer RESET. I needs a 0.1uF capacitor, and a little soldering
+* Try to wire CC1101 into pogo board for less messy soldering? also maybe can use some easier pins (JTAG or speaker?)
+* [this bootloader](https://github.com/LowPowerLab/DualOptiboot) can get it's sketch from external flash (liek the SPI flash on XE), which may help with a better wireless bootlader. This is also a way to support multiple "roms" in a selector menu.
 
 
 ## Thanks
 
-* [useful pinout docs](https://pastebin.com/uFfBCQDG)
-* [useful forum thread](https://community.arduboy.com/t/smart-response-xe-re-purposed-into-arduboy/6094)
+* [pinout docs](https://pastebin.com/uFfBCQDG)
+* [good forum thread](https://community.arduboy.com/t/smart-response-xe-re-purposed-into-arduboy/6094)
 * Image-credit: [@ce](https://github.com/ea/srxe_cc1101). Lots of great notes on putting it together, too.
 * [arduino lib](https://github.com/bitbank2/SmartResponseXE) is very useful.
 * [Detailed setup](https://docs.google.com/document/d/1TT3Tmx0-dsvzmA0lSYiwq4LR293aMV1dJWhriqxD-Po/edit)
