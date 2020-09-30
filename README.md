@@ -10,8 +10,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Connect a CC1101 board (with little antenna) to SPI (`MISO`, `MOSI`, `SCK`, `VCC`, `GND` on ICSP test-pads) and GD0 (labeled `CS_flash`) & CSN pins (left pin of `R34`)
 * Connect serial TX/RX of `RS232` to connector for serial adapter and solder-bridge pins 3,4,5 on `U6` trace.
 * Drill hole in case to fit antanna, cut little bit out of fin inside to fit the CC1101 board
-* use [arduino lib](https://github.com/bitbank2/SmartResponseXE). It has LCD, keyboard functions, and `SRXESleep` which can use power button + interrupts to make device power off work right
-* use [CC1101 lib](https://github.com/ea/CC1101)
+* Install [SmartResponseXE](https://github.com/ea/SmartResponseXE) and [CC1101](https://github.com/ea/CC1101) libraries in arduino
 
 ![cc1101 hookup](https://github.com/ea/srxe_cc1101/raw/master/photos/board_annot.png)
 
