@@ -10,7 +10,7 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Connect a CC1101 board (with little antenna) to SPI (`MISO`, `MOSI`, `SCK`, `VCC`, `GND` on ICSP test-pads) and GD0 (labeled `CS_flash`) & CSN pins (left pin of `R34`)
 * Connect serial TX/RX of `RS232` to connector for serial adapter and solder-bridge pins 3,4,5 on `U6` trace.
 * Drill hole in case to fit antanna, cut little bit out of fin inside to fit the board
-* use [arduino lib](https://github.com/bitbank2/SmartResponseXE)
+* use [arduino lib](https://github.com/bitbank2/SmartResponseXE). It has LCD, keyboard functions, and `SRXESleep` which can use power button + interrupts to make device power off work right
 * use [CC1101 lib](https://github.com/ea/CC1101)
 
 ![cc1101 hookup](https://github.com/ea/srxe_cc1101/raw/master/photos/board_annot.png)
@@ -24,7 +24,8 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * [pager](https://github.com/ea/srxe_cc1101/tree/master/srxe_cc1101_pager)
 * [spectrum analyzer](https://github.com/ea/srxe_cc1101/tree/master/srxe_specan)
 * [BASIC Interpretor](https://github.com/akkera102/07_tiny_basic)
-* [arduboy core](https://pastebin.com/1uWmkqGT)
+* [arduboy2 core](https://pastebin.com/1uWmkqGT)
+* [arduboy2 core + Virus LQP-79 game](http://mrblinky.net/smartresponse/smartresponse-xe-interlaced-paintscreen.zip)
 
 
 ## needs investigation
@@ -34,7 +35,6 @@ Resources for working with Smart Response XE and custom code with CC1101 radio m
 * Need to see if I can get the built-in radio doing something useful.
 * Figure out all the GPIO I can access and wire them to a port. It would be neat to be able to do i2c, etc. Some are easier to get at (like JTAG, speaker pins, and top-4 pogo pins)
 * I think auto-reset doesn't work right, on program
-* Add (real) power switch?
 * Try to wire CC1101 into pogo board for 0-soldering?
 * keep multiple "roms" on flash and swap them out with menu bootloader
 
