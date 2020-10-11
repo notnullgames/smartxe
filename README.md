@@ -1,4 +1,4 @@
-# smartxe
+# WIP
 
 Resources for working with Smart Response XE and custom code with CC1101 radio module.
 
